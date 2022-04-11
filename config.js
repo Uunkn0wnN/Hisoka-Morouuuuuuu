@@ -14,7 +14,7 @@ global.APIs = {
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapi.xyz': 'Your Key',
+	'https://zenzapi.xyz': 'sanzychan01',
 }
 
 // Other
@@ -27,11 +27,11 @@ global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
     success: '✓ Success',
-    admin: 'Fitur Khusus Admin Group!',
+    admin: 'Fitur Ini Khusus Admin Group!',
     botAdmin: 'Bot Harus Menjadi Admin Terlebih Dahulu!',
-    owner: 'Fitur Khusus Owner Bot',
-    group: 'Fitur Digunakan Hanya Untuk Group!',
-    private: 'Fitur Digunakan Hanya Untuk Private Chat!',
+    owner: 'Fitur Ini Khusus Owner Bot',
+    group: 'Fitur Ini Hanya Bisa Digunakan Didalam Group!',
+    private: 'Fitur Ini Hanya Bisa Digunakan Di Private Chat!',
     bot: 'Fitur Khusus Pengguna Nomor Bot',
     wait: 'Loading...',
     endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
