@@ -532,8 +532,8 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
-	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/065ba0f90f876244a0360.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Bot Sabo\n⭔ 3K Perminggu\n⭔ 5K Perbulan\n⭔ 10K Permanen\n\nPembayaran Bisa Via Pulsa/Gopay/Dana\n\nUntuk Info Lebih Lanjut, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)\n\nScan Kode QR Diatas Untuk Melakukan Donasi/Pembayaran` }, { quoted: m })
+	    case 'donasi': case 'sewabot': case 'sewa': case 'donate': {
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/a4d59fe6cdd0530e59248.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Bot Sabo\n⭔ 3K Perminggu\n⭔ 5K Perbulan\n⭔ 10K Permanen\n\nPembayaran Bisa Via Pulsa/Gopay/Dana\n\nUntuk Info Lebih Lanjut, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)\n\nUntuk Donasi : \nDana : 082145203493\nGopay : 082145203493` }, { quoted: m })
             }
             break
             case 'sc': {
@@ -842,7 +842,7 @@ let teks = `══✪〘 *👥 Tag All* 〙✪══
                 hisoka.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
                 break
-                case 'hidetag': {
+                case 'hidetag': case 'h': {
             if (!m.isGroup) throw mess.group
             if (!isBotAdmins) throw mess.botAdmin
             if (!isAdmins) throw mess.admin
