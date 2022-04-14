@@ -533,7 +533,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/cee17e578428275f38902.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Bot Sabo\n⭔ 3K Perminggu\n⭔ 5K Perbulan\n⭔ 10K Permanen\n\nPembayaran Bisa Via Pulsa/Gopay/Dana\n\nUntuk Info Lebih Lanjut, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)\n\nDonasi Untuk Saya : \n\n⭔ Gopay : 082145203493\n⭔ Dana : 082145203493` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/065ba0f90f876244a0360.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Bot Sabo\n⭔ 3K Perminggu\n⭔ 5K Perbulan\n⭔ 10K Permanen\n\nPembayaran Bisa Via Pulsa/Gopay/Dana\n\nUntuk Info Lebih Lanjut, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)\n\nScan Kode QR Diatas Untuk Melakukan Donasi/Pembayaran` }, { quoted: m })
             }
             break
             case 'sc': {
@@ -1120,7 +1120,7 @@ break
                 }
             }
             break
-            case 'delete': case 'del': {
+            case 'delete': case 'del': case 'd': {
                 if (!m.quoted) throw false
                 let { chat, fromMe, id, isBaileys } = m.quoted
                 if (!isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
@@ -1138,22 +1138,22 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Tiktok Owner',
+                                    url: 'https://tiktok.com/@dzyjustforyou'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    displayText: 'Number Owner',
+                                    phoneNumber: '+62 821-4520-3493'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
+                                    displayText: 'Sewa Bot',
+                                    id: 'donasi'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Contact Owner',
+                                    displayText: 'Owner',
                                     id: 'owner'
                                 }  
                             }, {
@@ -1177,22 +1177,22 @@ break
 		    await sleep(1500)
 		    let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    displayText: 'Tiktok Owner',
+                                    url: 'https://tiktok.com/@dzyjustforyou'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    displayText: 'Number Owner',
+                                    phoneNumber: '+62 821-4520-3493'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
+                                    displayText: 'Sewa Bot',
+                                    id: 'donasi'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Contact Owner',
+                                    displayText: 'Owner',
                                     id: 'owner'
                                 }  
                             }, {
@@ -2343,7 +2343,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             }
 	    break
 	    case 'anonymous': {
-                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+                if (m.isGroup) return m.reply('Fitur Ini Hanya Bisa Dilakukan Di Private Chat!')
 				this.anonymous = this.anonymous ? this.anonymous : {}
 				let buttons = [
                     { buttonId: 'start', buttonText: { displayText: 'Start' }, type: 1 }
@@ -2352,7 +2352,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             }
 			break
             case 'keluar': case 'leave': {
-                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+                if (m.isGroup) return m.reply('Fitur Ini Hanya Bisa Dilakukan Di Private Chat!')
                 this.anonymous = this.anonymous ? this.anonymous : {}
                 let room = Object.values(this.anonymous).find(room => room.check(m.sender))
                 if (!room) {
@@ -2369,7 +2369,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 if (command === 'leave') break
             }
             case 'mulai': case 'start': {
-                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+                if (m.isGroup) return m.reply('Fitur Ini Hanya Bisa Dilakukan Di Private Chat!')
                 this.anonymous = this.anonymous ? this.anonymous : {}
                 if (Object.values(this.anonymous).find(room => room.check(m.sender))) {
                     let buttons = [
