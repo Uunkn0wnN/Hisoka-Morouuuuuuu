@@ -1910,6 +1910,12 @@ break
                 hisoka.sendText(m.chat, `⭔ *Hasil :* ${anu.message}`, m)
             }
             break
+
+case 'tes': case 'test': case 'runtime': {
+m.reply('Bot Sudah On Kak')
+}
+break
+
 	    case 'stalker': case 'stalk': {
 		if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply('Limit Harian Anda Telah Habis')
                 if (!text) return m.reply(`Example : ${prefix +command} type id\n\nList Type :\n1. ff (Free Fire)\n2. ml (Mobile Legends)\n3. aov (Arena Of Valor)\n4. cod (Call Of Duty)\n5. pb (point Blank)\n6. ig (Instagram)\n7. npm (https://npmjs.com)`)
@@ -2839,9 +2845,9 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                                     url: 'https://tiktok.com/@dzyjustforyou'
                                 }
                             }, {
-                                callButton: {
-                                    displayText: 'Number Owner',
-                                    phoneNumber: '+62 821-4520-3493'
+                                urlButton: {
+                                    displayText: 'Instagram Owner',
+                                    phoneNumber: 'https://instagram.com/dzycassano'
                                 }
                             }, {
                                 quickReplyButton: {
