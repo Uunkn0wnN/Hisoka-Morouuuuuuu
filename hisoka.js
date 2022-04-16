@@ -533,11 +533,17 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/a4d59fe6cdd0530e59248.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Bot Sabo\n⭔ 3K Perminggu\n⭔ 5K Perbulan\n⭔ 10K Permanen\n\nPembayaran Bisa Via Pulsa/Gopay/Dana\n\nUntuk Info Lebih Lanjut, Silahkan Chat Owner\nhttps://wa.me/6282145203493 (Owner)\n\nUntuk Donasi : \nDana : 082145203493\nGopay : 082145203493` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/3ce85e8d0c75e6757ff8a.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Harga Sewa Bot Sabo\n⭔ 3K Perminggu\n⭔ 5K Perbulan\n⭔ 7K Permanent\n⭔ 10K Permanent Via Pulsa\n\nPembayaran Bisa Via Dana/Gopay/Pulsa\n\nUntuk Info Lebih Lanjut, Silahkan Cjat Owner\nhttps://wa.me/6282145203493 (Owner)\n\nUntuk Donasi : \n\n⭔ Dana : 0821-4520-3493\n⭔ Pulsa : 0821-4520-3493\n⭔ Gopay : 0821-4520-3493` }, { quoted: m })
             }
             break
+
+case 'tes': case 'test': {
+m.reply('Bot Sudah On Kak')
+}
+break
+
             case 'sc': {
-                m.reply('Sc? Chat Owner!')
+                m.reply('Script? Chat Owner!')
             }
             break
             case 'chat': {
@@ -1142,14 +1148,14 @@ break
                                     url: 'https://tiktok.com/@dzyjustforyou'
                                 }
                             }, {
-                                callButton: {
-                                    displayText: 'Number Owner',
-                                    phoneNumber: '+62 821-4520-3493'
+                                urlButton: {
+                                    displayText: 'Instagram Owner',
+                                    url: 'https://instagram.com/dzycassano'
                                 }
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Sewa Bot',
-                                    id: 'donasi'
+                                    id: 'sewa'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1181,14 +1187,14 @@ break
                                     url: 'https://tiktok.com/@dzyjustforyou'
                                 }
                             }, {
-                                callButton: {
-                                    displayText: 'Number Owner',
-                                    phoneNumber: '+62 821-4520-3493'
+                                urlButton: {
+                                    displayText: 'Instagram Owner',
+                                    url: 'https://instagram.com/dzycassano'
                                 }
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Sewa Bot',
-                                    id: 'donasi'
+                                    id: 'sewa'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1538,7 +1544,7 @@ break
             break
             case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'blowjob': {
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('Alphabot', 'https://apikeyzeeoneofc.herokuapp.com/api/nsfw/blowjob?apikey=Alphabot'+command, {}, 'Alphabot') }, caption: 'Generate Random ' + command }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Generate Random ' + command }, { quoted: m })
             }
             break
 	    case 'couple': {
@@ -1616,7 +1622,7 @@ break
             }
             break
 	        case 'motivasi': case 'dilanquote': case 'bucinquote': case 'katasenja': case 'puisi': {
-                let anu = await fetchJson(api('zenz', '/api/'+command, {}, 'Apikey'))
+                let anu = await fetchJson(api('zenz', '/api/'+command, {}, 'apikey'))
                 let buttons = [
                     {buttonId: `motivasi`, buttonText: {displayText: 'Next'}, type: 1}
                 ]
@@ -1632,19 +1638,19 @@ break
             case '3dchristmas': case '3ddeepsea': case 'americanflag': case '3dscifi': case '3drainbow': case '3dwaterpipe': case 'halloweenskeleton': case 'sketch': case 'bluecircuit': case 'space': case 'metallic': case 'fiction': case 'greenhorror': case 'transformer': case 'berry': case 'thunder': case 'magma': case '3dcrackedstone': case '3dneonlight': case 'impressiveglitch': case 'naturalleaves': case 'fireworksparkle': case 'matrix': case 'dropwater':  case 'harrypotter': case 'foggywindow': case 'neondevils': case 'christmasholiday': case '3dgradient': case 'blackpink': case 'gluetext': {
                 if (!text) throw `Example : ${prefix + command} text`
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/textpro/' + command, { text: text }, 'Apikey') }, caption: `Text Pro ${command}` }, { quoted: m})
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/textpro/' + command, { text: text }, 'apikey') }, caption: `Text Pro ${command}` }, { quoted: m})
 	    }
             break
 	    case 'shadow': case 'romantic': case 'smoke': case 'burnpapper': case 'naruto': case 'lovemsg': case 'grassmsg': case 'lovetext': case 'coffecup': case 'butterfly': case 'harrypotter': case 'retrolol': {
                 if (!text) throw 'No Query Text'
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/photooxy/' + command, { text: text }, 'Apikey') }, caption: `Photo Oxy ${command}` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/photooxy/' + command, { text: text }, 'apikey') }, caption: `Photo Oxy ${command}` }, { quoted: m })
             }
             break
             case 'ffcover': case 'crossfire': case 'galaxy': case 'glass': case 'neon': case 'beach': case 'blackpink': case 'igcertificate': case 'ytcertificate': {
                 if (!text) throw 'No Query Text'
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/ephoto/' + command, { text: text }, 'Apikey') }, caption: `Ephoto ${command}` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/ephoto/' + command, { text: text }, 'apikey') }, caption: `Ephoto ${command}` }, { quoted: m })
             }
             break
 	    case 'nomerhoki': case 'nomorhoki': {
@@ -1910,12 +1916,6 @@ break
                 hisoka.sendText(m.chat, `⭔ *Hasil :* ${anu.message}`, m)
             }
             break
-
-case 'tes': case 'test': {
-m.reply('Bot Sudah On Kak')
-}
-break
-
 	    case 'stalker': case 'stalk': {
 		if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply('Limit Harian Anda Telah Habis')
                 if (!text) return m.reply(`Example : ${prefix +command} type id\n\nList Type :\n1. ff (Free Fire)\n2. ml (Mobile Legends)\n3. aov (Arena Of Valor)\n4. cod (Call Of Duty)\n5. pb (point Blank)\n6. ig (Instagram)\n7. npm (https://npmjs.com)`)
@@ -1953,13 +1953,13 @@ break
 		    db.data.users[m.sender].limit -= 1
                 } else if (type.toLowerCase() == 'ig') {
                     if (!id) throw `No Query username, Example : ${prefix + command} ig cak_haho`
-                    let { result: anu } = await fetchJson(api('zenz', '/api/stalker/ig', { username: id }, 'Apikey'))
+                    let { result: anu } = await fetchJson(api('zenz', '/api/stalker/ig', { username: id }, 'apikey'))
                     if (anu.status == false) return m.reply(anu.result.message)
                     hisoka.sendMedia(m.chat, anu.caption.profile_hd, '', `⭔ Full Name : ${anu.caption.full_name}\n⭔ User Name : ${anu.caption.user_name}\n⭔ ID ${anu.caption.user_id}\n⭔ Followers : ${anu.caption.followers}\n⭔ Following : ${anu.caption.following}\n⭔ Bussines : ${anu.caption.bussines}\n⭔ Profesional : ${anu.caption.profesional}\n⭔ Verified : ${anu.caption.verified}\n⭔ Private : ${anu.caption.private}\n⭔ Bio : ${anu.caption.biography}\n⭔ Bio Url : ${anu.caption.bio_url}`, m)
 		    db.data.users[m.sender].limit -= 1
                 } else if (type.toLowerCase() == 'npm') {
                     if (!id) throw `No Query username, Example : ${prefix + command} npm scrape-primbon`
-                    let { result: anu } = await fetchJson(api('zenz', '/api/stalker/npm', { query: id }, 'Apikey'))
+                    let { result: anu } = await fetchJson(api('zenz', '/api/stalker/npm', { query: id }, 'apikey'))
                     if (anu.status == false) return m.reply(anu.result.message)
                     m.reply(`⭔ Name : ${anu.name}\n⭔ Version : ${Object.keys(anu.versions)}\n⭔ Created : ${tanggal(anu.time.created)}\n⭔ Modified : ${tanggal(anu.time.modified)}\n⭔ Maintainers :\n ${anu.maintainers.map(v => `- ${v.name} : ${v.email}`).join('\n')}\n\n⭔ Description : ${anu.description}\n⭔ Homepage : ${anu.homepage}\n⭔ Keywords : ${anu.keywords}\n⭔ Author : ${anu.author.name}\n⭔ License : ${anu.license}\n⭔ Readme : ${anu.readme}`)
 		    db.data.users[m.sender].limit -= 1
@@ -2349,7 +2349,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             }
 	    break
 	    case 'anonymous': {
-                if (m.isGroup) return m.reply('Fitur Ini Hanya Bisa Dilakukan Di Private Chat!')
+                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
 				this.anonymous = this.anonymous ? this.anonymous : {}
 				let buttons = [
                     { buttonId: 'start', buttonText: { displayText: 'Start' }, type: 1 }
@@ -2358,7 +2358,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             }
 			break
             case 'keluar': case 'leave': {
-                if (m.isGroup) return m.reply('Fitur Ini Hanya Bisa Dilakukan Di Private Chat!')
+                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
                 this.anonymous = this.anonymous ? this.anonymous : {}
                 let room = Object.values(this.anonymous).find(room => room.check(m.sender))
                 if (!room) {
@@ -2375,7 +2375,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 if (command === 'leave') break
             }
             case 'mulai': case 'start': {
-                if (m.isGroup) return m.reply('Fitur Ini Hanya Bisa Dilakukan Di Private Chat!')
+                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
                 this.anonymous = this.anonymous ? this.anonymous : {}
                 if (Object.values(this.anonymous).find(room => room.check(m.sender))) {
                     let buttons = [
@@ -2472,7 +2472,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 m.reply('Sukses Change To Self Usage')
             }
             break
-            case 'ping': case 'botstatus': case 'statusbot': case 'runtime': {
+            case 'ping': case 'botstatus': case 'statusbot': {
                 const used = process.memoryUsage()
                 const cpus = os.cpus().map(cpu => {
                     cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
@@ -2847,7 +2847,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             }, {
                                 urlButton: {
                                     displayText: 'Instagram Owner',
-                                    phoneNumber: 'https://instagram.com/dzycassano'
+                                    url: 'https://instagram.com/dzycassano'
                                 }
                             }, {
                                 quickReplyButton: {
