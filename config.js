@@ -10,13 +10,11 @@ const chalk = require('chalk')
 // Website Api
 global.APIs = {
 	alfa: 'https://api-alphabot.herokuapp.com/'
-	zenz: 'https://zenzapi.xyz/'
 }
 
 // Apikey Website Api
 global.APIKeys = {
 	'https://api-alphabot.herokuapp.com/': 'Alphabot',
-	'https://zenzapi.xyz/': '5991EB7EEE',
 }
 
 // Other
