@@ -18,7 +18,7 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6282145203483']
+global.owner = ['6282145203493']
 global.premium = ['6282145203493']
 global.packname = 'Created By'
 global.author = 'Sabo'
