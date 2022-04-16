@@ -9,16 +9,16 @@ const chalk = require('chalk')
 
 // Website Api
 global.APIs = {
-	alfa: 'https://api-alphabot.herokuapp.com/'
+	zenz: 'https://zenzapi.xyz',
 }
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://api-alphabot.herokuapp.com/': 'Alphabot',
+	'https://zenzapi.xyz': '5991EB7EEE',
 }
 
 // Other
-global.owner = ['6282145203493']
+global.owner = ['6282145203483']
 global.premium = ['6282145203493']
 global.packname = 'Created By'
 global.author = 'Sabo'
